@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var t=require("./products"),r=require("./utils"),e=document.querySelector(".js-cart-price"),c=document.querySelector(".js-catalog");(0,r.productsToHtml)(t.products,c);var i=0;function s(t){i+=t,e.innerHTML="".concat((0,r.prettifyPrice)(i)," руб.")}c.addEventListener("click",function(r){var e=r.target.closest(".add-to-cart-btn");if(e){var c=e.closest(".js-product-card").getAttribute("data-id");s(+t.products[c].price),e.classList.add("disabled"),e.innerHTML="Товар добавлен в корзину"}});
 },{"./products":"FaWJ","./utils":"FOZT"}]},{},["Focm"], null)
-//# sourceMappingURL=/helicon-test.75c87582.js.map
+//# sourceMappingURL=/src.75c87582.js.map
