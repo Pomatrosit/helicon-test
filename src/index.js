@@ -10,15 +10,17 @@ let cartPrice = 0
 
 function addToCart (num) {
   cartPrice += num
-  cartNode.innerHTML = `${prettifyPrice(cartPrice)} руб.`
+  cartNode.innerHTML = prettifyPrice(cartPrice)
 }
 
 catalog.addEventListener('click', e => {
+  e.preventDefault()
   const btn = e.target.closest('.add-to-cart-btn')
   if (btn) {
     const id = btn.closest('.js-product-card').getAttribute('data-id')
     addToCart(+products[id].price)
-    btn.classList.add('disabled')
-    btn.innerHTML = "Товар добавлен в корзину"
+    btn.classList.add('disabled-btn')
+    btn.firstChild.innerHTML = 'Добавлено'
+    btn.style.pointerEvents = 'none'
   }
 })

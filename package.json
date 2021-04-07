@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.11",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  }
 }
