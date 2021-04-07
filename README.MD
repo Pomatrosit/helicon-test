@@ -1,4 +1,4 @@
-Для запуска dev сборки выполнить:
+Р”Р»СЏ Р·Р°РїСѓСЃРєР° РґРµРІ РІРµСЂСЃРёРё:
 npm install -g parcel-bundler
 npm i
 npm run start
